@@ -11,3 +11,11 @@ def test_subtract():
 
 def test_multiply():
     assert multiply (6, 2) == 12
+
+def test_multiply_zero():
+    # Arrange
+    a, b = 7, 0
+    # Act
+    result = multiply(a, b)
+    # Assert
+    assert result == 0
