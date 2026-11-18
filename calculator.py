@@ -10,17 +10,17 @@ def multiply(a, b):
 
 def divide(a, b):
 	return a / b
-
-def CircleArea(r):
+        	
+def circleArea(r):
 	if r >= 0:
-		return 3.14 * r * r
+        	return 3.14 * r * r
 	else:
-		return "NaN"
+        	return "Error"
 
 def main():
 	while True:
 		a = float(input("First number: "))
-		op = input("Operator (+ - * /): ")
+		op = input("Operator (+ - * / a): ")
 		b = float(input("Second number: "))
 		if op == "+":
 			print("Result:", add(a, b))
@@ -30,6 +30,9 @@ def main():
 			print("Result:", multiply(a, b))
 		elif op == "/":
 			print("Result:", divide(a, b))
+		elif op == "a":
+			r = float(input("Radius: "))
+			print("Result:", CircleArea(r))
 		else:
 			print("Unknown operator:", op)
 
