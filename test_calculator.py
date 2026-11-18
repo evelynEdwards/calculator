@@ -12,6 +12,9 @@ def test_subtract():
 def test_multiply():
     assert multiply (6, 2) == 12
 
+def test_circleArea():
+    assert CircleArea(-4) == "Error"
+
 def test_multiply_zero():
     # Arrange
     a, b = 7, 0
